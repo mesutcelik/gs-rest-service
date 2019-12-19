@@ -14,6 +14,8 @@ public class Application {
 
 	@Bean
 	ClientConfig config() {
-		return new ClientConfig();
+		ClientConfig clientConfig = new ClientConfig();
+		clientConfig.setInstanceName("Istanbul");
+		return clientConfig;
 	}
 }
